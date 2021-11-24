@@ -1,0 +1,48 @@
+#include <iostream>
+
+int main() {
+	// создаем переменную х и задаем тип данных int( численный тип данных)
+	int x = 5;
+
+	// выводим в терминал текст и переменную х, которой присвоили число 5
+	std::cout<<"Before:" << x << std::endl;
+
+	// перезадаем переменной х новое значение
+	 x = 6;
+
+	 // выводим в терминал текст и переменную х, которой присвоили число 6
+	std::cout<<"After:" << x << std::endl;
+
+	// просим пользователя ввести число 
+	std::cout << "My value:"  << std::endl;
+
+	// закидываем число пользователя в переменную х
+	std::cin >> x;
+
+	// выводим переменную х, с тем значением которое присвоил пользователь
+	std::cout << x << std:: endl;
+
+	// конец :) 
+	setlocale(LC_ALL, "Russian");
+	std::string intro = "когда то я ехал на своей машине и увидел одного человека";
+	std::string npc_name = "Алан";
+	std::string question_1 = "привет,как тебя зовут?";
+	std::string question_2 = "классное имя , а что ты тут один делаешь?";
+	std::string motion;
+	
+	
+	
+	std::string question_3 = "ясно,тогда почему бы тебе не сесть в мою машину,раз твоя сломалась? ";
+	std::string my_name;
+	std::string action;
+	
+	
+	
+	std::cout << intro << std::endl;
+	std::cout << question_1 << std::endl;
+	std::cin >> my_name;
+	std::cout << question_2 <<  std::endl;
+	std::cin >> motion;
+	std::cout << question_3 <<std::endl;
+	std::cin >> action;
+}
