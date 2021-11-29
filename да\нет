@@ -1,0 +1,32 @@
+#include <iostream>
+#include <Windows.h>
+
+int main() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	std::string answ{};
+
+
+	std::cout << "однажды гуляя по темному лесу, вы заходите в темный темный дом которому более 100 лет... "
+		"вы заходите в него и видите незнакомца..." << std::endl;
+
+	std::cout << "он спрашивает вас"
+		"ты хочешь войти в мой дом?" << std::endl;
+	std::cout << std::endl << "да/нет" << std::endl << std::endl;
+	std::cin >> answ;
+	if (answ == "да") {
+		std::cout << "пройди испытание и ты выйдешь с этого дома живым! "
+			<< std::endl;
+	}
+
+	else if (answ == "нет") {
+		std::cout << "уходи я даю тебе последний шанс!"
+			<< std::endl;
+	}
+	else {
+		std::cout << "ты че молчишь, я тебя спрашиваю! хотя не важнщ"
+			"игрока убивают..."
+			<<std::endl;
+
+
+	}
