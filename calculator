@@ -1,0 +1,58 @@
+#include <iostream>
+
+
+
+
+void sub(double a, double b) {
+	std::cout << "a-b = " << (a-b) << std::endl;
+}
+ 
+void sum(double a, double b) {
+	std::cout << "a+b = " << (a+b) << std::endl;
+}
+
+void div(double a, double b) {
+	if (b != 0) {
+		std::cout << "a/b" << double(a / b) << std::endl;
+	}
+	else {
+		std::cout << "на 0 делить нельзя!";
+	}
+}
+
+void mult(double a, double b) {
+	std::cout << "a*b" << (a * b) << std::endl;
+}
+
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	double num1;
+	double num2;
+	char op;
+
+	std::cout << "введите первое число:" << std::endl;
+	std::cin >> num1;
+	std::cout << "введите второе число:" << std::endl;
+	std::cin >> num2;
+	std::cout << "какое действие нужно выполнить?(+,-,*,/)" << std::endl;
+	std::cin >> op;
+
+	if (op == '-') {
+		sub(num1, num2);
+	}
+	else if (op == '+') {
+		sum(num1, num2);
+	}
+	else if (op == '/') {
+		div(num1, num2);
+	}
+	else if (op == '*') {
+		mult(num1, num2);
+	}
+
+	else {
+		std::cout << "такого символа нет!";
+	}
+
+}
