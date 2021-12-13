@@ -1,0 +1,23 @@
+сначала кликаем на файл ресурсом
+затем "добавить"
+"создать элемент"
+"название файла"
+
+
+
+
+#include "iostream"
+using namespace std;
+
+	void sii() {
+		cout << "hgh";
+	}
+  
+  
+  
+  #include <iostream>
+#include "my_source.h"
+using namespace std;
+int main() {
+	sii();
+}
