@@ -1,0 +1,67 @@
+#include <iostream>
+#include <Windows.h>
+#include <string>
+
+
+void funkcia2(int num) {
+	std::string otvet = "Я леший, охраняю этот лес!";
+	std::string otvet2 = "Я кашей бессмертный , я тебя не пущу дальше!";
+
+	if (num == 1) {
+		std::cout << otvet;
+
+	}
+	else if (num == 2) {
+
+		std::cout << otvet2;
+	}
+	else {
+
+		std::cout << "Ошибка";
+	}
+}
+
+void funkcia(int vvod) {
+
+	int id1 = 1;
+	int id2 = 2;
+	int num = 0;
+
+	if (vvod == id1) {
+		num = id1;
+		funkcia2(num);
+	}
+
+	else if (vvod == id2) {
+		num = id2;
+		funkcia2(num);
+	}
+	
+	else {
+		num =vvod;
+		funkcia2(num);
+    }
+ 
+}
+
+ 
+
+
+
+
+int main() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	
+	int vvod = 0;
+
+	std::cout << "Я зашел в зачарованный лес! " << std::endl << std::endl;
+
+	std::cout << "по дороге мне встретился персонаж " << std::endl << std::endl;
+
+	std::cin >> vvod ;
+
+	std::cout << std::endl;
+
+	funkcia(vvod);
+}
