@@ -1,0 +1,79 @@
+#include <iostream>
+#include<windows.h>
+#include <string>
+using namespace std;
+
+class NPC {
+public:
+	NPC(string x, int y);
+	void dialogue();
+	void get_name();
+
+private:
+	string name;
+	int id;
+
+	void attack();
+	void repair();
+
+};
+
+NPC::NPC(string x, int y) {
+	name = x;
+	id = y;
+}
+
+void NPC::dialogue() {
+	int switch_answ;
+	string my_name;
+
+	if (id == 1) {
+
+		int force = 3;
+		int answer = true;
+		int answer2 = true;
+
+		cout << "введите свое имя" << endl;
+		cin >> my_name;
+		cout << "идет загрузка мира , подождите пожалуйста" << endl;
+		Sleep(3000);
+
+		cout << "саламалейкум братец! меня звать Олдрик" " я вижу ты на зоне впервые, тебя как звать  и  чем могу помочь?" << endl;
+		cout << "1. алейкум! меня звать " << my_name << " организуй экскурсию если ты честный фраер!" << endl;
+		cout << "2. " << my_name << " скажи как отсюда выбраться!" << endl;
+
+		cin >> switch_answ;
+		switch (switch_answ)
+		{
+
+
+
+		case 1:
+			cout << "честнее меня не бывает! "
+				"смотри вот наша камера, знаю грязная но что поделать это тюрьма"
+				"вот столовая , нас кормят одними крысами если хочешь знать"
+				"а вот где все зеки работают"
+				"впринципе все!" << endl;
+			break;
+
+		case 2:
+			cout << "слушай от сюда выбраться можно но ты же не тупой чтобы сразу выбираться, надо заплатить начальству хорошие бабки примерно миллион , слышал что сел на 10 лет ну так что заплатишь и я тебе расскажу как с ними договориться\n" << endl;
+			cout << "1.да/2.нет, не надо ты какой то подохрительный" << endl;
+			cin >> answer;
+
+			if (answer == 1) {
+				cout << "вы заплатили за свободу" << endl;
+
+			}
+			if (answer == 2) {
+				cout << "ах ты тварь будешь ходить по сторонам оглядывайся" << endl;
+			}
+		}
+
+	}
+}
+int main() {
+	setlocale(0, "ru");
+	NPC Oldrick("Oldrick", 1);
+	Oldrick.dialogue();
+}
