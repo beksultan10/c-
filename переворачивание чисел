@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int n, num, digit, rev = 0;
+	cout << "введите число" << endl;
+	cin >> num;
+
+	n = num;
+
+	do {
+		digit = num % 10;
+		digit = num % 10;
+		rev = (rev * 10) + digit;
+		num = num / 10;
+	}
+	 	while (num != 0);
+	cout << "введеное число :" << rev << endl;
+
+}
