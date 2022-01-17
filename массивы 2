@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	/*int z;
+	cout << "введите число :" << endl;
+	cin >> z;
+	for (int i = 1; i <= 10; i++) {
+		cout << z << " * " << i << " = " << z * i << endl;
+
+	}
+    
+	for (int y = 0; y <= 7; y++)  
+	{
+		if (y % 2 == 0)
+			for (int x = 1; x <= 4; x++)
+				cout << " * " << "  ";
+		else
+			for (int x = 1; x <= 4; x++)
+				cout << " " << " * ";
+
+		cout << endl;
+		
+   }
+	return 0;
+	*/
+
+	int arr[5];
+
+	cout << "Введите в одной строке элементы массива(5 целых чисел) и нажмите <Enter>." << endl;
+
+	for (int i = 0; i < 5; i++)
+
+	{
+		cin >> arr[i];
+	}
+
+	int min = arr[0];
+
+	for (int i = 1; i < 5; i++)
+
+	{
+		if (min > arr[i])
+		{
+			min = arr[i];
+		}
+	}
+	cout << "Минимальный элемент массива: " << min;
+}
