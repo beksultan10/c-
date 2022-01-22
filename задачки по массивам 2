@@ -1,0 +1,78 @@
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+#include <cstdio>
+
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "Russian");
+	/*	int arr[5];
+
+	cout << "Введите в одной строке элементы массива(5 целых чисел) и нажмите <Enter>." << endl;
+
+	for (int i = 0; i < 5; i++)
+
+	{
+		cin >> arr[i];
+	}
+
+	int min = arr[0];
+
+	for (int i = 1; i < 5; i++)
+
+	{
+		if (min > arr[i])
+		{
+			min = arr[i];
+		}
+	}
+	cout << "Минимальный элемент массива:" << min;
+
+	for (int i = 1; i < 5; i++)
+
+	{
+		if (min < arr[i])
+		{
+			min = arr[i];
+		}
+	}
+	cout << "  Максимальный элемент массива:" << min;
+	int sum = 0;
+	for (int )
+	*/
+	int N, x, y;
+	double sum, min, max;
+	cout << "Введите размерность массива:" << endl;
+	cout << "N = ";
+	cin >> N;
+	double* A = new double[N];
+	cout << "Введите элементы массива:" << endl;
+	for (int i = 0; i < N; i++)
+	{
+		cin >> A[i];
+	}
+	min = DBL_MAX;
+	max = DBL_MIN;
+	for (int i = 0; i < N; i++)
+	{
+		if (A[i] < min)
+		{
+			min = A[i];
+			x = i;
+		}
+		if (A[i] > max)
+		{
+			max = A[i];
+			y = i;
+		}
+	}
+	sum = 0;
+	for (int i = x; i < y + 1; i++)
+	{
+		sum += A[i];
+	}
+	cout << "Искомая сумма элементов: " << sum << endl;
+	delete[] A;
+	system("pause");
+	return 0;
+}
