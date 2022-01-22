@@ -1,0 +1,49 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	/*cout << "вычисления среднего арифметического послдедовательности положительных чисел.\n"
+	"вводите чисел.\n" " Для завершения ввода ведите ноль\n";
+
+	double n, summ = 0, col, chislo, sra;
+	for (n = 1; n <= 5; n++) {
+		
+		cin >> chislo;
+		summ += chislo;
+	}
+	sra = summ / 5;
+	cout << endl << sra << endl;
+	cout << "введено чисел - " << 5 << endl;
+	cout << "среднее арифметическое " << " = " << sra << endl;
+	cout << "сумма чисел - " << summ << endl;
+	system("pause");
+	*/
+    
+    int desit, i, dvoich;
+    i = 2;
+    cout << "Vvedite chislo: ";
+    cin >> desit;
+    int dvo[200];
+    int t = 0;
+    while (desit > 1)
+    {
+        dvoich = desit % i;
+        dvo[t] = dvoich;
+        desit /= i;
+        t++;
+    }
+    t--;
+    cout << "Dvoichnoe: ";
+    cout << 1;
+    while (t >= 0)
+    {
+        cout << dvo[t];
+        t--;
+    }
+    cout << endl;
+    return main();
+
+}
