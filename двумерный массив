@@ -1,3 +1,5 @@
+1 способ:
+
 #include <iostream>
 #include <Windows.h>
  
@@ -20,3 +22,34 @@ int main() {
 }
 
 
+2 способ :
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <iterator>
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    int n, m; std::cout << "N, M = "; std::cin >> n >> m;
+    std::vector<std::vector<int>> A(n, std::vector<int>(m));
+    for (std::size_t i = 0; i < n; i++)
+        for (std::size_t j = 0; j < m; j++) {
+            std::cout << "A[" << i << ", " << j << "] = ";
+            std::cin >> A[i][j];
+        }
+    system("cls");
+    for (auto& r : A) {
+        std::copy(r.begin(), r.end(), std::ostream_iterator<int>(std::cout, " "));
+        std::cout << "\n";
+    }
+    for (std::size_t j = 0; j < m; j++) {
+        int sum = 0;
+        for (std::size_t i = 0; i < n; i++)
+            sum += A[i][j];
+        std::cout << "Сумма " << j << " столбца = " << sum << "\n";
+    }
+    system("pause");
+}
