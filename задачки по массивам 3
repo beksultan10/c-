@@ -1,0 +1,62 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+
+
+int main() {
+
+	/*float cel, faren;
+	cout << "Enter temperature from farengate =" << endl;
+	cin >> faren;
+	cel = (faren - 32) /1.8;
+	cout << "temperature from celcius = " << cel << endl;
+	return 0;*/ 
+
+
+	/*float inch, mill;
+	cout << "Enter inch :" << endl;
+	cin >> inch;
+	mill = (inch *25.4);
+	cout << "millimeteres = " << mill;
+	return 0;*/
+
+	/*float mil, kilom;
+	cout << "Enter mil: ";
+	cin >> mil;
+	kilom = (mil * 1.60094);
+	cout << "rilometers = " << kilom;
+	return 0;*/ 
+
+	//int a;
+	//int b;
+	//cout << "enter your num :";
+	//cin >> a;
+	//cin >> b;
+	//if (a > b) {
+	//	cout << "max num =" << a;
+	//}
+	//else if (a < b) {
+	//	cout << "max num =" << b;
+	//}
+	//else {
+	//	cout << "enter different number:";
+	//}
+
+	int a;
+	int b;
+	cout << "enter your num :";
+	cin >> a;
+	cin >> b;
+	if (a > b) {
+		cout << a << ">" << b;
+	}
+	else if (a < b) {
+		cout << a << ">" << b;
+	}
+	else {
+		cout << a << "=" << b;
+	}
+}
