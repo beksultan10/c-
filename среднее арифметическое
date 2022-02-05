@@ -1,0 +1,25 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    cout << "вычисления среднего арифметического послдедовательности положительных чисел.\n"
+    "вводите чисел.\n" ;
+
+    double n, summ = 0, col, chislo, sra;
+    for (n = 1; n <= 5; n++) {
+
+        cin >> chislo;
+        summ += chislo;
+    }
+    sra = summ / 5;
+    cout << endl << sra << endl;
+    cout << "введено чисел - " << 5 << endl;
+    cout << "среднее арифметическое " << " = " << sra << endl;
+    cout << "сумма чисел - " << summ << endl;
+    system("pause");
+    
+
+    return main();
+}
