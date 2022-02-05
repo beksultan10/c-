@@ -1,0 +1,77 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    cout << "вычисления среднего арифметического послдедовательности положительных чисел.\n"
+    "вводите чисел.\n" ;
+
+    double n, summ = 0, col, chislo, sra;
+    for (n = 1; n <= 5; n++) {
+
+        cin >> chislo;
+        summ += chislo;
+    }
+    sra = summ / 5;
+    cout << endl << sra << endl;
+    cout << "введено чисел - " << 5 << endl;
+    cout << "среднее арифметическое " << " = " << sra << endl;
+    cout << "сумма чисел - " << summ << endl;
+    system("pause");
+    
+
+    return main();
+}
+
+
+//int sum(int a, int h) {
+//	return 0, 5 * (a + h);
+//}
+//
+//void main() {
+//	int a;
+//	int h;
+//
+//	cout << "cel naiti treugolnik" << endl;
+//	cout << "vvedite chislo:" << endl;
+//	cin >> a;
+//	cout << "vvedine vtoroe chislo" << endl;
+//	cin >> h;
+//	cout  << "ploshad treugolnika = " <<  0.5 * (a + h);
+//
+//	
+//}
+
+
+
+
+
+
+//void sArray(int arr[], int size);
+//
+//int main()
+//{
+//	const int SIZE1 = 8;
+//	const int SIZE2 = 14;
+//
+//	int arr1[SIZE1] = {};
+//	int arr2[SIZE2] = {};
+//
+//	sArray(arr1, SIZE1);
+//	sArray(arr2, SIZE2);
+//
+//	return 0;
+//}
+//
+//void sArray(int array[], int size)
+//
+//{
+//	for (int i = 0; i < size; i++)
+//	{
+//		array[i] = i + 1;
+//		cout << array[i] << "  ";
+//	}
+//	cout << endl;
+//}
+//
