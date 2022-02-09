@@ -1,0 +1,119 @@
+#include <iostream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	//int a{ 0 }, b{ 0 }, c{ 0 };
+	//int number{ 123 };
+
+	//int z = number / 10;
+
+	//c = number % 10;
+
+	//b = z % 10;
+
+	//a = z / 10;
+
+	//cout << a <<  '\n' << '\n' ;
+	//cout << b << endl;
+	//cout << c <<  endl;
+
+
+	//int x = 8;
+	//int y = 5;
+	//int z = 2;
+	//int g = 0;
+
+	//g = (x * y) / (z*z);
+	//cout << g << endl;
+
+	//int a = 2;
+	//int b = 3;
+	//if (a > b) {
+	//	cout << a << endl;
+	//}
+	//else(b > a); {
+	//	cout << b << endl;
+	//}
+
+	/*int a = 2;
+	int b = 4;
+	int c = 4;
+
+	if (a == b || b == c || c == a) {
+		cout << "yes" << endl;
+	}
+	else {
+		cout << "no" << endl;
+	}*/
+
+
+
+
+	int a{ 0 }, b{ 0 }, c{ 0 }, d{ 0 };
+	int chislo = 3219;
+	int variant;  //2310
+
+	int a1;
+	int b1;
+	int c1;
+	int d1;
+
+
+
+	d = chislo % 10; //9
+	cout << d << endl;
+	c = (chislo % 100) % 9; //1
+	cout << c << endl;
+	b = (chislo % 1000) / 100; //2
+	cout << b << endl;
+	a = (chislo % 10000) / 1000;//3
+	cout << a << endl;
+
+	cin >> variant;
+
+	a1 = variant / 1000;
+	cout << a1 << endl;
+	b1 = variant / 100 % 10;
+	cout << b1 << endl;
+	c1 = variant / 10 % 10;
+	cout << c1 << endl;
+	d1 = variant % 10;
+	cout << d1 << endl;
+
+	int bull = { 0 };
+	int cow = { 0 };
+	if (a == a1) {
+		bull++;
+	}
+
+	if (b == b1) {
+		bull++;
+	}
+
+	if (c == c1) {
+		bull++;
+	}
+
+	if (d == d1) {
+		bull++;
+	}
+	cout << "bull :" << bull << " cow :" << cow << endl;
+
+	if (a == a1 || a == b1 || a == c1 || a == d1) {
+		cow++;
+	}
+	if (b == a1 || b == b1 || b == c1 || b == d1) {
+		cow++;
+	}
+	if (c == a1 || c == b1 || c == c1 || c == d1) {
+		cow++;
+	}
+		if (d == a1 || d == b1 || d == c1 || d == d1) {
+			cow++;
+		}
+		cout << "bull :" << bull << " cow :" << cow << endl;
+	}
