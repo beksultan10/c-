@@ -1,0 +1,86 @@
+#include <iostream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+
+int main() {
+	/*1int i{ 0 };
+	float sum{ 0 };
+	float n{ 23 };
+	for (i = 1; i <= n; i++) {
+		sum += 1 / (float)i;
+
+	}
+	cout << sum << endl;*/
+
+
+
+	/*2for (size_t i = 0; i < 100; i++) {
+		cout << (char)176;
+	}*/
+
+
+
+	//3.int i{ 0 };
+	//char vvod;
+	//cin >> vvod;
+
+	//for (size_t i = 0; i < 4; i++) {
+	//
+	//	vvod = vvod + 1;
+	//	cout << (vvod);
+	//}
+	/*
+	
+
+	//3.1char i{ 0 };
+	char vod;
+	cin >> vod;
+	int index{ 0 };
+	index = (int)vod;
+	for (size_t i = 1; i < 4; i++) {
+		if (index >= (char)90) {
+			index = 64;
+		}
+		index = index + 1;
+		cout << (char)index;*/
+//}
+
+
+
+	/*3.1.2 char val{ 0 };
+	cin >> val;
+	for (int i = 1; i < 4; i++) {
+		if ('@' < val && val < 'X') {
+			val = val + 1;
+			cout << val;
+		}
+		else {
+			if ('Z' == val) {
+				val = val - 26;
+			}
+			val = val + 1;
+			cout << val;
+		}
+	}*/
+
+	return 0;
+}
+
+
+char val{ 0 };
+	cin >> val;
+	for (int i = 1; i < 4; i++) {
+		if ('\'' < val && val < 'x') {
+			val = val + 1;
+			cout << val;
+		}
+		else {
+			if ('z' == val) {
+				val = val - 26;
+			}
+			val = val + 1;
+			cout << val;
+		}
+
+		return 0;
