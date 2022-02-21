@@ -1,0 +1,100 @@
+/*1.int chislo{ 0 };
+	cin >> chislo;
+	if (chislo > 3) {
+		chislo = chislo + 10;
+		cout << chislo;
+		if (chislo < 3) {
+			chislo = chislo - 10;
+			cout << chislo;
+		}
+	}*/
+
+	/*2.int chislo{ 0 };
+	cin >> chislo;
+	if (chislo <= 7) {
+		cout << "yes" << endl;
+	}
+	if (chislo >= 10) {
+		cout << "no" << endl;
+	}
+	else if (chislo == 9) {
+		cout << "error" << endl;
+	}*/
+
+
+	//3.int month{ 0 };
+	//cin >> month;
+	//if (month == 1) {
+	//	cout << "january" << endl;
+	//}
+	//if (month == 2) {
+	//	cout << "february" << endl;
+	//}
+	//if (month == 3) {
+	//	cout << "march" << endl;
+	//}
+	//if (month == 4) {
+	//	cout << "april" << endl;
+	//}
+	//if (month == 5) {
+	//	cout << "may" << endl;
+	//}
+	//if (month == 6) {
+	//	cout << "june" << endl;
+	//}
+	//if (month == 7) {
+	//	cout << "jule" << endl;
+	//}
+	//if (month == 8) {
+	//	cout << "august" << endl;
+	//}
+	//if (month == 9) {
+	//	cout << "september" << endl;
+	//}
+	//if (month == 10) {
+	//	cout << "october" << endl;
+	//}
+	//if (month == 11) {
+	//	cout << "november" << endl;
+	//}
+	//if (month == 12) {
+	//	cout << "december" << endl;
+	//}
+
+	/*4.int chislo{ 0 };
+	int chislo2{ 0 };
+	cin >> chislo;
+	cin >> chislo2;
+	if (chislo > chislo2) {
+		cout << chislo << endl;
+	}
+	if (chislo2 > chislo) {
+		cout << chislo2 << endl;
+	}*/
+
+	//5.int chislo{ 0 };
+	//int chislo2{ 0 };
+	//cin >> chislo;
+	//cin >> chislo2;
+	//if (chislo + 100 < chislo2 || chislo - 100 > chislo2  ) {
+	//	cout << "yes" << endl;
+	//}
+	//else  {
+	//	cout << "no" << endl;
+	//}
+
+	/*6.int a;
+	int b;
+	int c;
+	cin >> a;
+	cin >> b;
+	if (a > b) {
+		cout << "yes" << endl;
+	}
+	else {
+		c = b;
+		b = a;
+		a = c;
+		cout << a << b << endl;
+		cout << "no" << endl;
+	}*/
