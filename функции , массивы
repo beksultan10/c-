@@ -1,0 +1,228 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+//
+//int fib(int n) {
+//	if (n == 0) {
+//		return 0;
+//	}
+//	else if (n == 1) {
+//		return 1;
+//	}
+//	else {
+//		return fib(n - 1) + fib(n - 2);
+//	}
+//	
+//}
+//
+//int main(void){
+//	cout << "chislo fibonacchi = " << fib(13) << endl;
+//	/*cout << factorial(10) << endl;*/
+//	//когда fib заходит в тело функции
+//	
+//}
+
+//int cub(int n) {             1 задача
+//	if (n == 0) {
+//		return 0;
+//	}
+//	else {
+//		return n * n * n;
+//	}
+//}
+//
+//int main() {
+//	cout << cub(4);
+//}
+
+//int chisla(int n , int n2) {  2 задача
+//	if (n == 0) {
+//		return 0;
+//	}
+//	if (n == 1) {
+//		return 1;
+//	}
+//	else {
+//		return n + n2;
+//	}
+//}
+//
+//int main(void) {
+//	cout << chisla(100, 3);
+//}
+
+//int chisla(int n, int n2) {       3 задача
+//	if (n == 0) {
+//		return 0;
+//	}
+//	if (n == 1) {
+//		return 1;
+//	}
+//	else {
+//		return n * n2;
+//	}
+//}
+//
+//int main(void) {
+//	cout << chisla(100, 3);
+//}
+
+//
+//int fib(int n) {                  4 задача
+//	int sum;
+//	std::cin >> sum;
+//	if (n < sum) {
+//		std::cout << "2 enter number more than 1" << std::endl;
+//		return 0;
+//	}
+//	if (n > sum) {
+//		std::cout << "1 enter number less than 2" << std::endl;
+//		return 0;
+//	}
+//	else {
+//		return 0;
+//	}
+//}
+//int main() {
+//	
+//	std::cout << "Snachalo slojenie" << std::endl;
+//	std::cout << fib(2) << std::endl;
+//}
+
+//int fib(int n , int n2) {              5 задача
+//	int sum;
+//	std::cin >> sum;
+//	if (n < sum && sum > n2) {
+//		std::cout <<  sum <<" enter number more than two numbers " << std::endl;
+//		return 0;
+//	}
+//	if (n > sum && n > n2) {
+//		std::cout <<  n <<" n - more than two numbers " << std::endl;
+//		return 0;
+//	}
+//
+//	if (n2 > sum && n2 > n) {
+//		std::cout << n2 << " n2 - more than two numbers " << std::endl;
+//		return 0;
+//	}
+//	else {
+//		return 0;
+//	}
+//}
+//int main() {
+//	
+//	std::cout << "Snachalo slojenie" << std::endl;
+//	std::cout << fib(2 , 3) << std::endl;
+//}
+
+
+//int massiv()        задача 6
+//{
+//	int a[10];
+//	int i;
+//	int sum = 0;
+//	srand(time(0));
+//	for (i = 0; i < 10; i++)
+//		a[i] = 1 + rand() % 25;
+//	for (i = 0; i < 10; i++)
+//		cout << a[i] << " ";
+//	cout << endl;
+//	for (i = 0; i < 10; i++) {
+//		sum += a[i];
+//	}
+//	cout << sum << '\n';
+//	return 0;
+//}
+//int main()
+//{
+//	massiv();
+//	cout << "\n";
+//}
+
+
+//void massiv()              7 задача
+//{
+//	int a[5];
+//	int i;
+//	int multip = 1;
+//	srand(time(0));
+//	for (i = 0; i < 5; i++)
+//		a[i] = 1 + rand() % 25;
+//	for (i = 0; i < 5; i++)
+//		cout << a[i] << " ";
+//	cout << endl;
+//	for (i = 0; i < 5; i++) {
+//		multip *= a[i];
+//	}
+//	cout << multip << '\n';
+//}
+//int main()
+//{
+//	massiv();
+//	cout << "\n";
+//}
+
+
+//void massiv()          8 задача
+//{
+//	int a[5];
+//	int i;
+//	
+//	srand(time(0));
+//	for (i = 0; i < 5; i++)
+//		a[i] = 1 + rand() % 25;
+//	for (i = 0; i < 5; i++)
+//		cout << a[i] << " ";
+//	cout << endl;
+//	
+//}
+//int main()
+//{
+//	massiv();
+//	cout << "\n";
+//}
+
+
+
+//int ist(int n) {               9 задача
+//	
+//	if (n == 0) {
+//		return 0;
+//	}
+//	else if (n % 2 == 0) {
+//		cout << "chetnoe" << endl; return 1;
+//	}
+//	else {
+//		cout << "nechet" << endl; return 0;
+//	}
+//}
+//	int main() {
+//		int chislo;
+//		cin >> chislo;
+//		cout << ist(chislo);
+//	}
+
+//
+//int ist(int n) {               10 задача
+//	
+//	if (n == 0) {
+//		return 0;
+//	}
+//	if (n == 2 || n == 3 || n == 5) {
+//		cout << "prostoe" << endl; return 0;
+//	}
+//
+//	else if (n%2 !=0 && n%3 !=0 && n%5 !=0 ) {
+//		cout << "prostoe" << endl; return 0;
+//	}
+//
+//	else {
+//		cout << "neprost" << endl; return 0;
+//	}
+//}
+//	int main() {
+//		int chislo;
+//		cin >> chislo;
+//		cout << ist(chislo);
+//	}
