@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstdlib>
+const int N = 5;
+using namespace std;
+int mass[N][N] = { 0 };
+int main()
+{
+    setlocale(0, "RUS");
+
+    for (int i = 1; i < N; ++i)
+        for (int j = 0; j < N; ++j) {
+            if (j + i == N - 1);
+            else mass[j][i] = 1;
+        }
+    for (int i = 0; i < N; ++i) {
+        for (int j = 0; j < N; ++j) {
+            cout << mass[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
