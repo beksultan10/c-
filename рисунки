@@ -1,0 +1,83 @@
+//void trg(int a, int b) {
+//	int vvod;
+//	cin >> vvod;
+//	for (int hight = 1; hight <= vvod; hight++) {
+//		for (int width = 1; width <= hight; width++) {
+//			cout << "*";
+//		}
+//		cout << endl;
+//	}
+//}
+//
+//int main() {
+//
+//	int a{ 0 };
+//	int b{ 0 };
+//
+//	trg(a, b);
+//
+//
+//
+//	
+//}
+
+
+//int main() {
+//
+//	cout << endl;
+//	for (int shirina = 8; shirina > 0; shirina--) {
+//		cout << "\t";
+//		for (int j = 0; j < shirina; j++) {
+//			cout << "*";
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
+
+
+
+//int main() {
+//	int vvod;
+//	cin >> vvod;
+//	int a = 0;
+//	
+//	cout << endl;
+//	for (int i = vvod; i > 0; i--) {
+//		cout << "\t";
+//		for (int j = 0; j < i; j++) {
+//			cout << ' ';
+//		}
+//		for (int i = 0; i <= a * 2; i++) {
+//			cout << "*";
+//		}
+//		cout << endl;
+//		a++;
+//	}
+//	
+//
+//}
+
+
+
+int main() {
+
+	cout << endl;
+	for (int i = 0; i < 10; i++) {
+		cout << "\t";
+
+		for (int j = 0; j < 10; j++) {
+       
+			if (i == 0 && j == 4 || i == 0 && j == 5 || i == 1 && j == 7 || i == 2 && j == 8 ||
+				i == 4 && j == 9 || i == 5 && j == 9 || i == 7 && j == 8 || i == 8 && j == 7 ||
+				i == 8 && j == 2 || i == 7 && j == 1 || i == 5 && j == 0 || i == 4 && j == 0 ||
+				i == 9 && j == 4 || i == 9 && j == 5 || i == 2 && j == 1 || i == 1 && j == 2) {
+				cout << '*' << " ";
+	 }
+			else {
+				cout << " " << " ";
+			}
+        }
+		cout << endl;
+	}
+}
