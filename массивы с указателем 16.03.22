@@ -1,0 +1,118 @@
+#include <iostream>
+#include <string>
+#include <Windows.h>
+
+using namespace std;
+//int main() {
+//	int y = 5;
+//	int* z = &y;
+//	cout << y << endl;            // &s - выводить адрес
+//	cout << &z << endl;            // *z - указатель
+//	cout << *z << endl;
+//}
+
+	//int perviy = 2;    1 задание
+	//int vtoroy = 2;
+	//int sum{ 0 };
+	//
+	//int* z = &perviy;
+	//int* x = &vtoroy;
+	//sum = * z + * x;
+	//cout << sum << endl; // выводит сумму
+	//cout << &sum << endl; //выводит адрес
+
+//int main() {          2 задание
+//	int a = 2;
+//	int b = 5;
+//	int* p1 = &a , * p2 = &b;
+//	*p1 = 11;
+//	cout << *p1 - *p2 << endl;
+//	}
+
+
+//int main() {       3 задание
+//	double a = 2.5, b = 5.2, res;
+//	double* p1 = &a, * p2 = &b;
+//	res = *p1 - *p2;
+//	cout << res << endl;
+//}
+
+
+//int main() {      4 задание
+//	const int SIZE = 10;
+//	int A[SIZE] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int* p1 = A;
+//	for (int i = 0; i < SIZE; i++) {
+//		cout << *p1++ << endl;
+// cout << *(A + i);
+//	}
+//}    a[i] = 1 + rand() % 10;
+
+
+//int main() {       6 задание
+//	const int N = 7;
+//	int A[N] = { 1 , -5 , 2 , 4 , 7 , 9 , 12 };
+//	int* p1 = A;
+//	for (int i = 0; i < N; i++) {
+//		if (A[i] == -5) {
+//			cout << A[i] << endl; //выводит отрицательное
+//			cout << i << endl;   //местанохождение в массиве
+//		}
+//	}
+//
+//}
+
+
+
+//int main() {     5 задание
+//
+//	const int SIZE = 10;
+//	int A[SIZE];
+//	int *p1 = A;
+//	for (int i = 0; i < SIZE; i++) {
+//		*p1 = 1 + rand() % 10; //выводит рандомные числа в массиве
+//		cout << *p1 << endl;
+//	}
+//
+//}
+
+
+
+
+//int main() {               7 задание 
+//
+//	const int SIZE = 16;
+//	int A[SIZE];
+//	int* p1 = A;
+//	for (int i = 0; i < SIZE; i++) {
+//		*(p1 + i) = 1 + rand() % 16; //выводит рандомные числа в массиве
+//		cout << *(p1+i) << endl;  //вспомнить таблицу приоритетов операции и изменение адреса
+//	}                             //это не запихивает все в одно число  , в другое тоже надо поэтому пишем +1 либо +i
+//	int Max = A[0], Min = A[0];
+//	for (int i = 0; i < SIZE; i++)
+//	{
+//		if (Max < A[i]) {
+//			Max = A[i];
+//		}
+//		if (Min > A[i]) {
+//			Min = A[i];
+//		}
+//	}
+//	cout << "Max: " << Max << endl;
+//	cout << "Min: " << Min << endl;
+//
+//}
+
+
+ int main() {              
+
+	const int SIZE = 16;
+	int A[SIZE];
+	int* p1 = A;
+	for (int i = 0; i < SIZE; i++) {
+		*(p1 + i + 1) = + 2; //выводит рандомные числа в массиве
+		cout << *(p1+i + 1) << endl;  //вспомнить таблицу приоритетов операции и изменение адреса
+	}                             //это не запихивает все в одно число  , в другое тоже надо поэтому пишем +1 либо +i
+	
+
+}
