@@ -1,0 +1,53 @@
+int main() {
+	setlocale(LC_ALL, "Russian");
+	const int SIZE = 5;
+	int A[SIZE] = { 4, 3 ,6 , 7 , 5 };
+	int* p1 = A;
+	int summa = 0;
+	int* summa1 = &summa;
+	for (int i = 0; i < SIZE; i++) {
+		int current = A[i];
+
+		cout << current << " " << endl;
+		*(summa1) = *(summa1) + current;
+		
+	}                          
+
+	cout << endl << "Сумма элементов массива = " << *(summa1);
+	return 0;
+}
+
+
+//int main()
+//{
+//	setlocale(LC_ALL, "Russian");
+//	/* Заполним массив значениями */
+//	const int n = 6;
+//	int mass[n] = { 5, 3, 2, 9, 3, 8 };
+//
+//	/* Создадим переменные для хранения суммы и произведения */
+//	int summa = 0; // Сумма
+//	int umnojenie = 1; // Произведение (по умолчанию 1)
+//
+//	cout << endl << "Массив = ";
+//	/* Проходим по всем элементам массива */
+//	for (int i = 0; i < n; ++i) {
+//		// Вынесем текущий элемент в переменную
+//		int current = mass[i];
+//
+//		// Сразу выведем его
+//		cout << current << " ";
+//
+//		// Пересчитываем сумму элементов массива с текущим значением
+//		summa = summa + current;
+//
+//		umnojenie = umnojenie * current;
+//	}
+//	cout << endl << "Сумма элементов массива = " << summa;
+//	cout << endl << "Произведение элементов массива = " << umnojenie;
+//
+//
+//
+//
+//	return 0;
+//}
