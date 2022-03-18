@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+
+//int main() {
+//	int y = 5;
+//	int* z = &y;
+//	cout << y << endl;            // &s - выводить адрес
+//	cout << &z << endl;            // *z - указатель
+//	cout << *z << endl;
+//}
+
+//int main() {    1 zadanie
+//	int a{ 0 };
+//	int b{ 0 };
+//	cin >> a;
+//	cin >> b;
+//	int* c = &a;
+//	int* d = &b;
+//
+//	cout << *c << endl;
+//	cout << *d << endl;
+//
+//	if (*(c) > *(d)) {
+//		cout << "bolshe ->" << *c << endl;
+//	}
+//	else if (*(d) > *(c)) {
+//		cout << "bolshe ->" << *d << endl;
+//	}
+//	else {
+//
+//	}
+//	return 0;
+//}
+
+
+
+//int main() {   2 zadanie
+//
+//	char i{ 6 };
+//	char* s = &i;
+//	cout << (char)*s;
+//
+//}
